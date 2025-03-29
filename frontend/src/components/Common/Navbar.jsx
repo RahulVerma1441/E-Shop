@@ -78,22 +78,22 @@ const Navbar = () => {
                 <nav className='space-y-4'>
                     <Link to="#" 
                     onClick={toggleNavDrawer} 
-                    className='block text-gray-600 hover: text-black'>
+                    className='block text-gray-600 hover:text-black'>
                         Men
                     </Link>
                     <Link to="#" 
                     onClick={toggleNavDrawer} 
-                    className='block text-gray-600 hover: text-black'>
+                    className='block text-gray-600 hover:text-black'>
                         Women
                     </Link>
                     <Link to="#" 
                     onClick={toggleNavDrawer} 
-                    className='block text-gray-600 hover: text-black'>
+                    className='block text-gray-600 hover:text-black'>
                         Top Wear
                     </Link>
                     <Link to="#" 
                     onClick={toggleNavDrawer} 
-                    className='block text-gray-600 hover: text-black'>
+                    className='block text-gray-600 hover:text-black'>
                         Bottom Wear
                     </Link>
                 </nav>
