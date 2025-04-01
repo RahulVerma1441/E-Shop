@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import {FaFilter} from "react-icons/fa"
-import FIlterSidebar from '../components/Products/FilterSidebar';
 import FilterSidebar from '../components/Products/FilterSidebar';
 import SortOptions from '../components/Products/SortOptions';
 import ProductGrid from '../components/Products/ProductGrid';
@@ -22,8 +21,11 @@ const CollectionPage = () => {
     }
 
     useEffect(()=>{
+        document.addEventListener("mousedown", handleClickOutside);
         //Add Event listener for clients
-        document.addEventListener("mousedown",handleClickOutside);
+        return ()=>{
+            document.addEventListener("mousedown",handleClickOutside);
+        }
     })
 
     useEffect(()=>{
